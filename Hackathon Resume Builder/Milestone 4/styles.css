@@ -1,0 +1,429 @@
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(135deg, #800f2f, #ff3cac, #3b0033, #8e44ad);
+  background-size: 400% 400%;
+  animation: gradient 12s ease infinite;
+  margin: 0;
+  padding: 20px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Resume Heading */
+main h1 {
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #ff3cac;
+}
+
+ /* Developer Name */
+main h4 {
+  /* padding: 10px; */
+  text-align: center;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #b1146d;
+  border-right: 3px solid #FF3CAC;
+  border-left: 3px solid #FF3CAC;
+}
+
+#form-container {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+#form-container form {
+  display: grid;
+  gap: 10px;
+  text-align: left;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input:invalid {
+  border-color: #e74c3c;
+}
+
+input:valid {
+  border-color: #2ecc71;
+}
+
+button {
+  background-color: #800f2f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #610b21;
+}
+
+/* Error Message Styles */
+#error-message {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Generated Resume Styles */
+.resume-container {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: left;
+}
+
+.personal-info {
+  margin-bottom: 20px;
+}
+
+.personal-info-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#resume-profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #800f2f;
+}
+
+#resume-name {
+  margin-top: 10px;
+  color: #800f2f;
+  text-align: center;
+}
+
+h1 {
+  color: #800f2f;
+  margin-top: 10px;
+}
+
+h2 {
+  color: #800f2f;
+  border-bottom: 2px solid #ff3cac;
+  padding-bottom: 5px;
+  text-align: left;
+}
+
+/* Responsive Design */
+
+/* Responsive Design for Medium Devices (Max Width: 900px) */
+@media (max-width: 900px) {
+  #form-container {
+      width: 90%;
+      padding: 20px;
+  }
+
+  main h1 {
+      font-size: 2rem;
+  }
+}
+
+/* Responsive Design for Tablets (Max Width: 768px) */
+@media (max-width: 768px) {
+  #form-container {
+      width: 85%;
+      padding: 15px;
+  }
+
+  main h1 {
+      font-size: 1.8rem;
+  }
+
+  button {
+      padding: 8px 15px;
+      font-size: 0.9rem;
+  }
+}
+
+/* Responsive Design for Small Devices (Max Width: 600px) */
+@media (max-width: 600px) {
+  #form-container {
+      width: 90%;
+      padding: 10px;
+  }
+
+  main h1 {
+      font-size: 1.6rem;
+  }
+
+  button {
+      padding: 8px 12px;
+      font-size: 0.8rem;
+  }
+
+  label,
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="file"] {
+      font-size: 0.9rem;
+  }
+}
+
+/* Responsive Design for Very Small Devices (Max Width: 480px) */
+@media (max-width: 480px) {
+  #form-container {
+      width: 95%;
+      padding: 8px;
+  }
+
+  main h1 {
+      font-size: 1.4rem;
+  }
+
+  button {
+      padding: 6px 10px;
+      font-size: 0.8rem;
+  }
+
+  label,
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="file"] {
+      font-size: 0.8rem;
+  }
+}
+
+/* Responsive Design for Extra Small Devices (Max Width: 360px) */
+@media (max-width: 360px) {
+  #form-container {
+      width: 100%;
+      padding: 6px;
+  }
+
+  main h1 {
+      font-size: 1.2rem;
+  }
+
+  button {
+      padding: 5px 8px;
+      font-size: 0.7rem;
+  }
+
+  label,
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="file"] {
+      font-size: 0.7rem;
+  }
+}
+
+
+/* General Styles for Resume */
+.resume-container {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: left;
+}
+
+h1 {
+  color: #800f2f;
+  margin-top: 10px;
+}
+
+h2 {
+  color: #800f2f;
+  border-bottom: 2px solid #ff3cac;
+  padding-bottom: 5px;
+  text-align: left;
+}
+
+.personal-info {
+  margin-bottom: 20px;
+}
+
+.personal-info-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#resume-profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #800f2f;
+}
+
+#resume-name {
+  margin-top: 10px;
+  color: #800f2f;
+  text-align: center;
+}
+
+.personal-info-content {
+  text-align: left; /* Align personal information to the left */
+}
+
+.education,
+.skills,
+.work-experience {
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+/* Responsive Design for Medium Devices (Max Width: 900px) */
+@media (max-width: 900px) {
+  .resume-container {
+      width: 90%;
+      padding: 20px;
+  }
+
+  h1 {
+      font-size: 2rem;
+  }
+
+  h2 {
+      font-size: 1.5rem;
+  }
+
+  #resume-profile-pic {
+      width: 120px;
+      height: 120px;
+  }
+}
+
+/* Responsive Design for Tablets (Max Width: 768px) */
+@media (max-width: 768px) {
+  .resume-container {
+      width: 85%;
+      padding: 15px;
+  }
+
+  h1 {
+      font-size: 1.8rem;
+  }
+
+  h2 {
+      font-size: 1.4rem;
+  }
+
+  #resume-profile-pic {
+      width: 100px;
+      height: 100px;
+  }
+}
+
+/* Responsive Design for Small Devices (Max Width: 600px) */
+@media (max-width: 600px) {
+  .resume-container {
+      width: 90%;
+      padding: 10px;
+  }
+
+  h1 {
+      font-size: 1.6rem;
+  }
+
+  h2 {
+      font-size: 1.3rem;
+  }
+
+  #resume-profile-pic {
+      width: 80px;
+      height: 80px;
+  }
+}
+
+/* Responsive Design for Very Small Devices (Max Width: 480px) */
+@media (max-width: 480px) {
+  .resume-container {
+      width: 95%;
+      padding: 8px;
+  }
+
+  h1 {
+      font-size: 1.4rem;
+  }
+
+  h2 {
+      font-size: 1.2rem;
+  }
+
+  #resume-profile-pic {
+      width: 70px;
+      height: 70px;
+  }
+}
+
+/* Responsive Design for Extra Small Devices (Max Width: 360px) */
+@media (max-width: 360px) {
+  .resume-container {
+      width: 100%;
+      padding: 6px;
+  }
+
+  h1 {
+      font-size: 1.2rem;
+  }
+
+  h2 {
+      font-size: 1rem;
+  }
+
+  #resume-profile-pic {
+      width: 60px;
+      height: 60px;
+  }
+}

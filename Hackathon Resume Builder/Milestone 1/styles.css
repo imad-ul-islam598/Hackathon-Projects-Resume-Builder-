@@ -1,0 +1,244 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #800F2F, #FF3CAC, #3B0033, #8E44AD);
+    background-size: 400% 400%;
+    animation: gradient 12s ease infinite;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  /* Resume Heading */
+  main h1 {
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #FF3CAC;
+  }
+
+  /* Developer Name */
+  main h4 {
+    /* padding: 10px; */
+    text-align: center;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #b1146d;
+    border-right: 3px solid #FF3CAC;
+    border-left: 3px solid #FF3CAC;
+  }
+
+  /* resume Container */
+  .resume-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #800F2F; /* Matching the primary color */
+    margin-top: 10px;
+  }
+  
+  h2 {
+    color: #800F2F;
+    border-bottom: 2px solid #FF3CAC;
+    padding-bottom: 5px;
+    text-align: left;
+  }
+  
+  .personal-info {
+    margin-bottom: 40px;
+  }
+  
+  #profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit:fill;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    border: 4px solid #800F2F; /* Adds a border that matches the primary color */
+  }
+  
+  button {
+    background-color: #800F2F;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #610B21;
+  }
+  
+  p, ul, li {
+    color: #000000;
+    text-align: left;
+  }
+  
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  ul li {
+    margin-bottom: 5px;
+  }
+
+/* Responsive CSS */
+@media (max-width: 768px) {
+  .resume-container {
+    max-width: 100%;
+    padding: 20px;
+    margin: 10px;
+  }
+
+  main h1 {
+    font-size: 2rem;
+  }
+
+  main h4 {
+    font-size: 1.5rem;
+  }
+
+  #profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p, ul li {
+    font-size: 1rem;
+  }
+
+  button {
+    padding: 8px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .resume-container {
+    padding: 15px;
+  }
+
+  main h1 {
+    font-size: 1.8rem;
+  }
+
+  main h4 {
+    font-size: 1.2rem;
+  }
+
+  #profile-pic {
+    width: 100px;
+    height: 100px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  p, ul li {
+    font-size: 0.9rem;
+  }
+
+  button {
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  main h1 {
+    font-size: 1.5rem;
+  }
+
+  main h4 {
+    font-size: 1rem;
+  }
+
+  #profile-pic {
+    width: 80px;
+    height: 80px;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  p, ul li {
+    font-size: 0.8rem;
+  }
+
+  button {
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 260px) {
+  body {
+    padding: 10px;
+  }
+
+  .resume-container {
+    padding: 10px;
+    box-shadow: none; 
+  }
+
+  main h1 {
+    font-size: 1.2rem; 
+  }
+
+  main h4 {
+    font-size: 0.9rem;
+  }
+
+  #profile-pic {
+    width: 70px;
+    height: 70px;
+  }
+
+  h2 {
+    font-size: 0.9rem; 
+  }
+
+  p, ul li {
+    font-size: 0.7rem; 
+  }
+
+  button {
+    padding: 5px 8px; 
+    font-size: 0.8rem; 
+  }
+
+  ul {
+    padding-left: 10px; 
+  }
+}
