@@ -38,10 +38,10 @@ document.getElementById('resume-form')?.addEventListener('submit', (event) => {
   const profilePic = profilePicInput.files ? profilePicInput.files[0] : null;
 
   // Validate form inputs
-  if (!name || !fatherName || !email || !contact || !address || !school || !degree || !islamicQualification || !year || !skills.length || !jobTitle || !company || !experience) {
-    alert('Please fill in all required fields.');
-    return;
-  }
+  // if (!name || !fatherName || !email || !contact || !address || !school || !degree || !islamicQualification || !year || !skills.length || !jobTitle || !company || !experience) {
+  //   alert('Please fill in all required fields.');
+  //   return;
+  // }
 
   // Display resume data
   (document.getElementById('resume-name') as HTMLHeadingElement).textContent = name;
