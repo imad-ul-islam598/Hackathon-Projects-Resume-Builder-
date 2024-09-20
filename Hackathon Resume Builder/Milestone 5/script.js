@@ -34,10 +34,10 @@ var _a, _b, _c, _d;
     const profilePicInput = document.getElementById('profilePicInput');
     const profilePic = profilePicInput.files ? profilePicInput.files[0] : null;
     // Validate form inputs
-    if (!name || !fatherName || !email || !contact || !address || !school || !degree || !islamicQualification || !year || !skills.length || !jobTitle || !company || !experience) {
-        alert('Please fill in all required fields.');
-        return;
-    }
+    // if (!name || !fatherName || !email || !contact || !address || !school || !degree || !islamicQualification || !year || !skills.length || !jobTitle || !company || !experience) {
+    //     alert('Please fill in all required fields.');
+    //     return;
+    // }
     // Display resume data
     document.getElementById('resume-name').textContent = name;
     document.getElementById('resume-fatherName').textContent = fatherName;
